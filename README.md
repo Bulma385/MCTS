@@ -1,1 +1,41 @@
 # MCTS
+
+# AlphaZe
+to do: lesen:
+-sample possible states from the current input and runs MCTS combined with the neural network, like described in the work of Silver et al. (2016).
+- crazy ara framework (opt. c++)
+- OpenSpiel (Lanctot et al., 2019) 
+- architecture RISEv2-mobile as introduced in Czech et al. (2020
+
+PAPER::::::::::::
+new method: policz combining pimc
+intro::
+- pimc perf. info mc memory consumption scales better than cfr
+- tsl true sight learning_:early stage acc
+
+(POMDPs)MDPs and not POMDPs) to be more efficient, turning imperfect state information into perfect information via sampling
+
+Pipeline Policy-Space Response Oracles (P2SRO; McAleer et al., 2020) and DeepNash (Perolat et al., 2022)
+PSRO
+
+information set
+Some well-known approaches in this field are Counterfactual Regret Minimization (Zinkevich et al., 2007; Burch et al., 2012; Brown et al., 2019) and Fictitious Play (Heinrich et al., 2015; Heinrich and Silver, 2016).
+
+ ensemble techniques such as bagging
+
+? algo 2 mcts
+? pi correct policy, p predicted one algo 3
+
+2 inspirations:
+Recursive Belief-based Learning (Brown et al., 2020) and Partially Observable Monte-Carlo Planning (Silver and Veness, 2010).
+
+meine idee: 
+zu game states samplen von information set:
+encoder decoder architecture - encodes info set into representation, decodes into perfect information game states - prefers states that are more porbable
+
+Deep Counterfactual Regret Minimization (nach Pluribus)
+http://proceedings.mlr.press/v97/brown19b/brown19b.pdf
+
+MCCFR (Burch et al., 2012)
+
+Another method that tackles the problem of uncertainty is Information Set MCTS (ISMCTS; Cowling et al., 2012), which constructs a game tree with each node representing an information set instead of a specific board position. Edges correspond to actions between information sets from the point of view of the player who plays them if we treat all moves as fully observable. This makes the computation less budget-heavy and improves the decision-making process compared to other methods like determinization. Adaptations of ICMCTS, such Many-Tree ISMCTS (Cowling et al., 2015) and Semi ISMCTS (Bitan and Kraus, 2017) advance the idea of ISMCTS. In particular, Semi ISMCTS, which tries to combine the advantages of PIMC and ISMCTS, could be interesting for future work. However, due to their complexity and their distance from the classical MCTS, they contradict our idea of a simple adaptation.
