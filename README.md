@@ -50,7 +50,8 @@ Another method that tackles the problem of uncertainty is Information Set MCTS (
 #### 2. RL Policy
 - train against previous iterations 
 - sga max expected outcome loglikelihood * reward
-- always sample moves from distribution, not choose maximum
+- sample moves from distribution, not maximum
+- also small fast policy 
 
 #### RL Value Network
 - predicts outcome from position (if both players play according to the same policy p)
@@ -58,7 +59,15 @@ Another method that tackles the problem of uncertainty is Information Set MCTS (
 - use only one sample per game, else overfitting
 -  value network more accurate than monte carlo rollouts using way less computations
 
-
+#### Searching: MCTS with Value and Policy Network
+- action value Q(s,a), visit count, prior probability P(s,a)
+- Select action: argmax(Q + u), u=P/1+N
+- New leaf -> Expand tree: 
+1. SL policy network -> prior probabilities for each legal move
+2. call value network for the leaf node -> v_theta
+3. fast rollout using the fast (small) policy -> z_L
+4. conv combine values of 2 and 3  -> V 
+5. update Q: 1/N * sum(V)  (avg V)
 
 
 
