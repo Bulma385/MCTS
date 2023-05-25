@@ -39,3 +39,34 @@ http://proceedings.mlr.press/v97/brown19b/brown19b.pdf
 MCCFR (Burch et al., 2012)
 
 Another method that tackles the problem of uncertainty is Information Set MCTS (ISMCTS; Cowling et al., 2012), which constructs a game tree with each node representing an information set instead of a specific board position. Edges correspond to actions between information sets from the point of view of the player who plays them if we treat all moves as fully observable. This makes the computation less budget-heavy and improves the decision-making process compared to other methods like determinization. Adaptations of ICMCTS, such Many-Tree ISMCTS (Cowling et al., 2015) and Semi ISMCTS (Bitan and Kraus, 2017) advance the idea of ISMCTS. In particular, Semi ISMCTS, which tries to combine the advantages of PIMC and ISMCTS, could be interesting for future work. However, due to their complexity and their distance from the classical MCTS, they contradict our idea of a simple adaptation.
+
+
+## Silver(2016) Mastering the Game of Go with Deep Neural Networks and Tree Search
+
+#### 1. Supervised Learning Policy Network
+- conv. layers and relu, final softmax (13 layers)
+- supervised (state, action) pair (30 million), maximize likelihood of action (achieved 57% acc.)
+
+#### 2. RL Policy
+- train against previous iterations 
+- sga max expected outcome loglikelihood * reward
+- always sample moves from distribution, not choose maximum
+
+#### RL Value Network
+- predicts outcome from position (if both players play according to the same policy p)
+- sgd on regression  on (state, outcome) pairs, min mse
+- use only one sample per game, else overfitting
+-  value network more accurate than monte carlo rollouts using way less computations
+
+
+
+
+
+
+
+
+
+
+
+
+
