@@ -66,10 +66,10 @@ Another method that tackles the problem of uncertainty is Information Set MCTS (
 1. SL policy network -> prior probabilities for each legal move
 2. call value network for the leaf node -> v_theta
 3. fast rollout using the fast (small) policy -> z_L
-4. conv combine values of 2 and 3  -> V 
+4. conv combine values of 2 and 3  -> V (lambda = 0.5)
 5. update Q: 1/N * sum(V)  (avg V)
 
-
+execute simulations on cpus and network evaluations on gpus in paralell
 
 
 
