@@ -42,6 +42,7 @@ Another method that tackles the problem of uncertainty is Information Set MCTS (
 
 
 ## Silver(2016) Mastering the Game of Go with Deep Neural Networks and Tree Search
+ansatz: selecting moves/positions using policy net, evaluating them using value net, combine value with mc rollouts
 
 #### 1. Supervised Learning Policy Network
 - conv. layers and relu, final softmax (13 layers)
@@ -63,15 +64,15 @@ Another method that tackles the problem of uncertainty is Information Set MCTS (
 - action value Q(s,a), visit count, prior probability P(s,a)
 - Select action: argmax(Q + u), u=P/1+N
 - New leaf -> Expand tree: 
-1. SL policy network -> prior probabilities for each legal move
-2. call value network for the leaf node -> v_theta
-3. fast rollout using the fast (small) policy -> z_L
-4. conv combine values of 2 and 3  -> V (lambda = 0.5)
+1. P(s,a) = p_sig(s,a) : SL policy network -> prior probabilities for each legal move
+2. v_theta : call value network for the leaf node -> v_theta
+3. z_L <- p_pi : fast rollout using the fast (small) policy -> z_L
+4. V = lam * z_L + (1-lam) * z_L : conv combine values of 2 and 3  -> V (lambda = 0.5)
 5. update Q: 1/N * sum(V)  (avg V)
 
 execute simulations on cpus and network evaluations on gpus in paralell
 
-
+stopped: Selection (Figure 4a).
 
 
 
