@@ -74,9 +74,31 @@ execute simulations on cpus and network evaluations on gpus in paralell
 
 stopped: Selection (Figure 4a).
 
+## Alpha Zero (https://www.science.org/doi/full/10.1126/science.aar6404?casa_token=4qwwONQWeL0AAAAA%3AKqUW01n3YdSoacToD4bHddWeD6Ukl5wcCNID_8SwcYfcZE6s6T0EkUxoBGrR14N5UQ6H07blOT3lfMY)
 
+- (p,v)=f_theta(s) 
+- min mse and cross-entr. loss : l=(z-v)^2-pi^Tlogp + c norm(theta)
+- only update wheights if new wins 55% against best player
+- board state, actions encoded as spatial planes? anhang?
+- same conv arch. as AlphaGo
+- Hyperparameter tuning : bazsian optimization!
 
+#### MCTS Algo for AlphaZero:
+(s,a) state action pair stores:
+- (N,W,V,P): N visit count, W total action value, Q mean value, P prior probability
+- PUCT variation: a_t = argmax Q + U, where U =C(s)P(s,a) sqrt(N)/1+N, where C is exploration rate that grows slowly with search time (or constant)
+- simulate until leaf node s_L, then:
+1. call net (p,v)=f_theta(s_L)
+2. expand leaf node: init pairs (s_L,a) with (0,0,0, p_a) 
+3. backwardpass: N(s_t,a)++, W+=v, Q=W/N
 
+input representations and action representation
+
+architecture: conv batch norm rectified residual with skip conn
+
+configutation?
+
+800 simulations per move
 
 
 
