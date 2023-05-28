@@ -103,6 +103,20 @@ configutation?
 ## Analysis of AlphaZero 
 https://arxiv.org/pdf/1902.04522v5.pdf
 
+
+
+###MCTRANSFORMER: COMBINING TRANSFORMERS
+AND MONTE-CARLO TREE SEARCH FOR OFFLINE REINFORCEMENT LEARNING
+https://openreview.net/pdf?id=-94tJCOo7OM
+
+
+
+
+
+
+
+
+
 MCTS Tutorial https://zsalloum.medium.com/monte-carlo-in-reinforcement-learning-the-easy-way-564c53010511
 
 
@@ -113,5 +127,5 @@ https://www.tripadvisor.com/engineering/
 https://blog.duolingo.com/tag/engineering/
 https://medium.com/meta-analytics
 https://engineering.atspotify.com/category/data-science/
-
+https://www.deeplearning.ai/the-batch/
 
