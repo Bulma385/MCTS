@@ -1,5 +1,8 @@
 # MCTS
 
+good tutorial for mcts in go: https://jonathan-hui.medium.com/monte-carlo-tree-search-mcts-in-alphago-zero-8a403588276a
+
+
 # AlphaZe
 to do: lesen:
 -sample possible states from the current input and runs MCTS combined with the neural network, like described in the work of Silver et al. (2016).
