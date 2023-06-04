@@ -124,7 +124,9 @@ for Imperfect-Information Games
 1. Pomdps for public belief states
 2. deepstack poker AI (2017): sample PBSs using exerpt knowledge
 3. pluribus poker ai: train population of ais without search then choose best during search?
-4. 
+There exist a number of iterative algorithms for solving imperfect-information games [5, 61, 28,
+36, 35]. We describe ReBeL assuming the counterfactual regret minimization - decomposition
+(CFR-D) algorithm is used [61, 16, 40].
 
 
 
