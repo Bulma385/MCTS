@@ -116,6 +116,29 @@ https://openreview.net/pdf?id=-94tJCOo7OM
 
 
 
+#### Brown(2020): Combining Deep Reinforcement Learning and Search
+for Imperfect-Information Games
+- https://github.com/facebookresearch/rebel
+- public belief states
+- Related Work:
+1. Pomdps for public belief states
+2. deepstack poker AI (2017): sample PBSs using exerpt knowledge
+3. pluribus poker ai: train population of ais without search then choose best during search?
+4. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
