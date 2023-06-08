@@ -62,7 +62,8 @@ Learning via Sequence Modeling (https://proceedings.neurips.cc/paper/2021/file/7
 1. estimate opponents (previous) actions' distribution
 2. for each action estimate payoff for own action by performing semi-determinized rollout 
 3. expected value for each action given information state is weighted sum of prob and estimated payoff
-
+- information state abstraction 
+- node representation decrease - byte to bit uint? hash mapping structure?
 
 
 ### A Survey on Transformers in Reinforcement Learning (https://arxiv.org/pdf/2301.03044.pdf)
