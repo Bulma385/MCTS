@@ -1,3 +1,12 @@
+### Thesis::
+
+Introduction:
+- MCTS guarenteed to conv to Nash Eq for 2p0s perf info games
+- determinization techniques have problems and do not converge, e.g. strategy fusion (old sources Finding optimal strategies for imperfect information games + . Understanding the Success of Perfect Information Monte Carlo Sampling in Game Tree Search)
+- ISMCTS addresses this problem (strategy fusion) (paper Information set monte carlo tree search)
+- 
+
+
 ### Overview
 
 Poker:
@@ -9,6 +18,12 @@ Rollout im turn:
 - 10 opponent * 10 own * 50 river * 10 op * 10 own = 500k
 Rollout im River:
 - 10 op * 10 own = 100                                   ( hier mehrfach betten ermöglichen)
+
+
+Representation Learning for Transformer Encoder:
+- Equity Calculator  (supervised)
+- Sequence reconstruction from its representation (self supervised)
+
 
 
 Grundidee:::
@@ -29,7 +44,6 @@ Problem::
 - damit der search tree wächst muss geclustert werden weil gesamplete start werte zu viele 1k * 1k * (50 über 3 = 20k) = 20 milliarden
 - das problem hat man nicht bei schach etc weil gleicher start punkt und optimale trajektorien verlaufen ähnlich
 
-- 
 
 
 ### On Transforming Reinforcement Learning with
@@ -40,6 +54,14 @@ Learning via Sequence Modeling (https://proceedings.neurips.cc/paper/2021/file/7
 
 ### Multi-Game Decision Transformers (https://arxiv.org/abs/2205.15241)
 - released models -> use this transformer?
+
+### Combining Prediction of Human Decisions with ISMCTS in Imperfect Information Games (https://arxiv.org/pdf/1709.09451.pdf)
+- ISMCTS  [6, 18, 22]
+- predict (determine) opponent actions, rest ismcts
+- given information states -> 
+1. estimate opponents (previous) actions' distribution
+2. for each action estimate payoff for own action by performing semi-determinized rollout 
+3. expected value for each action given information state is weighted sum of prob and estimated payoff
 
 
 
@@ -56,10 +78,16 @@ Offline RL::
 Goal Conditioned RL::
 - Goal-Conditioned Reinforcement Learning: Problems and Solutions (https://arxiv.org/pdf/2201.08299.pdf)
 
-Model-based RL::
+Model-based RL:: (learn model interesting)
 - Mastering atari, go, chess and shogi by planning with a learned model
 - generate imaginary trajectories: Dream to control: Learning behaviors by latent imagination
 (stehen geblieben 2.2 Tranformers!!!!!!!)
+
+
+
+
+
+
 
 ### Representation Matters: The Game of Chess Poses a Challenge to Vision Transformers (https://arxiv.org/pdf/2304.14918.pdf)
 - net AlphaVile (Comb of AlphaZero, MobileNet, NextVit) convolutional transformer hybrid (https://github.com/QueensGambit/CrazyAra/pull/196)
