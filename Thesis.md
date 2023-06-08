@@ -38,9 +38,28 @@ Transformers: The Development Trajectory (https://arxiv.org/pdf/2212.14164.pdf)
 ### Decision Transformer: Reinforcement
 Learning via Sequence Modeling (https://proceedings.neurips.cc/paper/2021/file/7f489f642a0ddb10272b5c31057f0663-Paper.pdf)
 
+### Multi-Game Decision Transformers (https://arxiv.org/abs/2205.15241)
+- released models -> use this transformer?
+
+
+
 ### A Survey on Transformers in Reinforcement Learning (https://arxiv.org/pdf/2301.03044.pdf)
+Challenges:
+1. training data depends on current policy
+2. RL algos highly sensitive to design choices
+3. transformers high comp cost
 
+Offline RL::
+- static offline dataset (e.g. replay buffer), "constrain the learned policy close to the data distribution, to avoid out-of-distribution actions"
+- popular trend RL via SL (RvS) [Emmons et al., 2021],
 
+Goal Conditioned RL::
+- Goal-Conditioned Reinforcement Learning: Problems and Solutions (https://arxiv.org/pdf/2201.08299.pdf)
+
+Model-based RL::
+- Mastering atari, go, chess and shogi by planning with a learned model
+- generate imaginary trajectories: Dream to control: Learning behaviors by latent imagination
+(stehen geblieben 2.2 Tranformers!!!!!!!)
 
 ### Representation Matters: The Game of Chess Poses a Challenge to Vision Transformers (https://arxiv.org/pdf/2304.14918.pdf)
 - net AlphaVile (Comb of AlphaZero, MobileNet, NextVit) convolutional transformer hybrid (https://github.com/QueensGambit/CrazyAra/pull/196)
