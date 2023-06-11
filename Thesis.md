@@ -55,6 +55,16 @@ Learning via Sequence Modeling (https://proceedings.neurips.cc/paper/2021/file/7
 ### Multi-Game Decision Transformers (https://arxiv.org/abs/2205.15241)
 - released models -> use this transformer?
 
+
+### (Brown) Superhuman AI for heads-up no-limit poker: Libratus beats top professionals
+- until flop use fine graned abstractoion; then more abstract, calc blueprint, after flop sub game solving  (14–16, 42) in real time
+1. Abstraction solving (via MCCFR) yields blueprint strat
+- action abstraction (source 29)
+- algorithmic hand abstraction
+- probabilistically skip over unpromising actions  (30, 39) (bucket strategies benefit from that)
+2. Sub Game Solving
+- unsafe and save sub game solving (14,15,42,48)
+
 ### Combining Prediction of Human Decisions with ISMCTS in Imperfect Information Games (https://arxiv.org/pdf/1709.09451.pdf)
 - ISMCTS  [6, 18, 22]
 - predict (determine) opponent actions, rest ismcts
