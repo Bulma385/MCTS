@@ -24,7 +24,10 @@ Representation Learning for Transformer Encoder:
 - Equity Calculator  (supervised)
 - Sequence reconstruction from its representation (self supervised)
 
-
+IDEE::
+- our turn -> net prior action probs -> sample action -> opponent turn -> trans sample opponent cards -> net sample opponent action -> ... own and opponent action until chance node -> sample chance node outcome -> ... repeat until terminal node -> backprop reward
+- repeat from our turn, sample own action again using uct & prior probs, sample opponent cards etc.
+- no strategy fusion problem due to never letting the net know what the sampled cards are???
 
 Grundidee:::
 - 1 Tranformer call pro situation  -> Range of cards (50x50/2)              (oder clustern? selber clustern oder variable?)
@@ -56,6 +59,24 @@ Learning via Sequence Modeling (https://proceedings.neurips.cc/paper/2021/file/7
 - released models -> use this transformer?
 
 ### DeepStack
+
+
+
+
+
+### Understanding the Success of Perfect Information Monte Carlo Sampling in Game Tree Search (https://webdocs.cs.ualberta.ca/~nathanst/papers/pimc.pdf)
+-  1998, Frank and Basin published an extensive critique of the PIMC
+- Problem 1 : strategy fusion: incorret assumption that one could use differnt strategies in sampled games 
+- Problem 2: non-locality: in perf info games,  the value of a node only depends on the children
+- 3 properties in focus:
+1. leaf correlation
+2. bias
+3. disambiguation factor
+
+
+
+
+
 
 ### (Brown) Superhuman AI for heads-up no-limit poker: Libratus beats top professionals (https://www.science.org/doi/pdf/10.1126/science.aao1733?casa_token=ArKnIuhMTPgAAAAA:cs7WEuyGlX_DsiUrADYYxMJsyy72Vvcqldwwffs4HIY3Gw3OMmq_ng2F2vowVFTLbQVCqG8yxMaQ_3M; file:///C:/Users/ccoem/Downloads/aao1733_brown_sm.pdf)
 - until flop use fine graned abstractoion; then more abstract, calc blueprint, after flop sub game solving  (14–16, 42) in real time
