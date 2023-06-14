@@ -61,12 +61,17 @@ Learning via Sequence Modeling (https://proceedings.neurips.cc/paper/2021/file/7
 ### DeepStack
 
 
-
+### Information Set Monte Carlo Tree Search (https://eprints.whiterose.ac.uk/75048/1/CowlingPowleyWhitehouse2012.pdf)
+- not the same as determinization, combats problems as strat fusion (Russell and Norvig [24] “averaging over clairvoyance.”)
+- nodes in the tree are information set -> more efficient comp budget since nodes share comput
+- model state distributions inside information sets as uniform -> no belief distributions
+- ISMCTS finds mixed policies for the small, solved game of Kuhn Poker [14].
+- 
 
 
 ### Understanding the Success of Perfect Information Monte Carlo Sampling in Game Tree Search (https://webdocs.cs.ualberta.ca/~nathanst/papers/pimc.pdf)
 -  1998, Frank and Basin published an extensive critique of the PIMC
-- Problem 1 : strategy fusion: incorret assumption that one could use differnt strategies in sampled games 
+- Problem 1 : strategy fusion: incorrect assumption that one could use different strategies in sampled games 
 - Problem 2: non-locality: in perf info games,  the value of a node only depends on the children
 - 3 properties in focus:
 1. leaf correlation
