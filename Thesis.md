@@ -69,6 +69,15 @@ Learning via Sequence Modeling (https://proceedings.neurips.cc/paper/2021/file/7
 - observation and board encoding networks (5 layers, 64filters, elu act) to map into matching latent encodings 
 - the distance of the outputs in the embedding space yields the probabilities
 - 'contextual preference ranking'  (“Predicting human card ¨selection in Magic: The Gathering with contextual preference ranking)
+- Siamese Network (10 conv layers, 128 filters, elu, skip, from 3x3 to 1x1 filters to combine into one oputput, fc neurons 512)
+- lr 0.0001, AdamW, in each epoch: each anchor and positive example once, sample k  negatives and use the closest
+- Problems:1) The agent ignores potentially dangerous boards, that
+could lead to immediate defeat if they are not regarded
+as the most likely one.
+2) In contrast to most other agents, our agent has no
+concept of “cautious” moves that perform adequately
+on many boards. Instead, it takes gambles based on
+guessing the correct board
 
 
 
