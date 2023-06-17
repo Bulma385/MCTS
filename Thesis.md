@@ -4,7 +4,7 @@ Introduction:
 - MCTS guarenteed to conv to Nash Eq for 2p0s perf info games
 - determinization techniques have problems and do not converge, e.g. strategy fusion (old sources Finding optimal strategies for imperfect information games + . Understanding the Success of Perfect Information Monte Carlo Sampling in Game Tree Search)
 - ISMCTS addresses this problem (strategy fusion) (paper Information set monte carlo tree search)
-- 
+- success in poker source N. Brown and T. Sandholm, “Superhuman AI for multiplayer poker,
 
 
 ### Overview
@@ -59,6 +59,18 @@ Learning via Sequence Modeling (https://proceedings.neurips.cc/paper/2021/file/7
 - released models -> use this transformer?
 
 ### DeepStack
+
+
+### Weighting Information Sets with Siamese Neural Networks in Reconnaissance Blind Chess (file:///D:/Dokumente/Downloads/IEEE_COG_2023.pdf)
+- predicts only one perfect information state
+- trained using triplets <Ot, pt, nti> ; observation, positive true state, negative states
+- triplet loss l = max(dp - dn + m, 0) , m being a margin
+- siamese networks usually expects same input data (here 128x8x8), hence
+- observation and board encoding networks (5 layers, 64filters, elu act) to map into matching latent encodings 
+- the distance of the outputs in the embedding space yields the probabilities
+- 'contextual preference ranking'  (“Predicting human card ¨selection in Magic: The Gathering with contextual preference ranking)
+
+
 
 
 ### Information Set Monte Carlo Tree Search (https://eprints.whiterose.ac.uk/75048/1/CowlingPowleyWhitehouse2012.pdf)
