@@ -81,6 +81,11 @@ guessing the correct board
 
 
 
+### Memory Bounded Monte Carlo Tree Search (Powley, Cowling 2017) file:///D:/Dokumente/Downloads/12932-Article%20Text-16449-1-2-20201228.pdf
+- IS-MCTS with bounded memory
+- tree stored as children singly linked list (leftmost child, and right sibling)
+- recycle nodes via queue, recycling the lastly updated nodes (node that children are updated before their parents so lastly updated nodes always have leaf nodes as children)
+- c++ implementation with 48 or 56 bytes per node repect without and with queue
 
 ### Information Set Monte Carlo Tree Search (https://eprints.whiterose.ac.uk/75048/1/CowlingPowleyWhitehouse2012.pdf)
 - not the same as determinization, combats problems as strat fusion (Russell and Norvig [24] “averaging over clairvoyance.”)
