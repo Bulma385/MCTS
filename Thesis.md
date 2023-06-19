@@ -80,6 +80,10 @@ on many boards. Instead, it takes gambles based on
 guessing the correct board
 
 
+### (Integrating Opponent Models with Monte-Carlo Tree Search in Poker 2010)
+
+
+
 
 ### Memory Bounded Monte Carlo Tree Search (Powley, Cowling 2017) file:///D:/Dokumente/Downloads/12932-Article%20Text-16449-1-2-20201228.pdf
 - IS-MCTS with bounded memory
@@ -87,12 +91,18 @@ guessing the correct board
 - recycle nodes via queue, recycling the lastly updated nodes (node that children are updated before their parents so lastly updated nodes always have leaf nodes as children)
 - c++ implementation with 48 or 56 bytes per node repect without and with queue
 
+
+
+
 ### Information Set Monte Carlo Tree Search (https://eprints.whiterose.ac.uk/75048/1/CowlingPowleyWhitehouse2012.pdf)
 - not the same as determinization, combats problems as strat fusion (Russell and Norvig [24] “averaging over clairvoyance.”)
 - nodes in the tree are information set -> more efficient comp budget since nodes share comput
 - model state distributions inside information sets as uniform -> no belief distributions
 - ISMCTS finds mixed policies for the small, solved game of Kuhn Poker [14].
-- 
+-  strategy fusion is detrimental, ISMCTS shows great promise. However, in domains such as Dou Di Zhu, where information sets have large numbers of legal moves and the effect of strategy fusion is not so clear, ISMCTS offers no immediate benefit over existing approaches
+
+
+
 
 
 ### Understanding the Success of Perfect Information Monte Carlo Sampling in Game Tree Search (https://webdocs.cs.ualberta.ca/~nathanst/papers/pimc.pdf)
