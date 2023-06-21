@@ -74,15 +74,11 @@ guessing the correct board
 ### (Integrating Opponent Models with Monte-Carlo Tree Search in Poker 2010)
 
 
-
-
 ### Memory Bounded Monte Carlo Tree Search (Powley, Cowling 2017) file:///D:/Dokumente/Downloads/12932-Article%20Text-16449-1-2-20201228.pdf
 - IS-MCTS with bounded memory
 - tree stored as children singly linked list (leftmost child, and right sibling)
 - recycle nodes via queue, recycling the lastly updated nodes (node that children are updated before their parents so lastly updated nodes always have leaf nodes as children)
 - c++ implementation with 48 or 56 bytes per node repect without and with queue
-
-
 
 
 ### Information Set Monte Carlo Tree Search (https://eprints.whiterose.ac.uk/75048/1/CowlingPowleyWhitehouse2012.pdf)
@@ -93,9 +89,6 @@ guessing the correct board
 -  strategy fusion is detrimental, ISMCTS shows great promise. However, in domains such as Dou Di Zhu, where information sets have large numbers of legal moves and the effect of strategy fusion is not so clear, ISMCTS offers no immediate benefit over existing approaches
 
 
-
-
-
 ### Understanding the Success of Perfect Information Monte Carlo Sampling in Game Tree Search (https://webdocs.cs.ualberta.ca/~nathanst/papers/pimc.pdf)
 -  1998, Frank and Basin published an extensive critique of the PIMC
 - Problem 1 : strategy fusion: incorrect assumption that one could use different strategies in sampled games 
@@ -104,10 +97,6 @@ guessing the correct board
 1. leaf correlation
 2. bias
 3. disambiguation factor
-
-
-
-
 
 
 ### (Brown) Superhuman AI for heads-up no-limit poker: Libratus beats top professionals (https://www.science.org/doi/pdf/10.1126/science.aao1733?casa_token=ArKnIuhMTPgAAAAA:cs7WEuyGlX_DsiUrADYYxMJsyy72Vvcqldwwffs4HIY3Gw3OMmq_ng2F2vowVFTLbQVCqG8yxMaQ_3M; file:///C:/Users/ccoem/Downloads/aao1733_brown_sm.pdf)
@@ -144,11 +133,23 @@ guessing the correct board
 ### On Transforming Reinforcement Learning with
 Transformers: The Development Trajectory (https://arxiv.org/pdf/2212.14164.pdf)
 
-### Decision Transformer: Reinforcement
-Learning via Sequence Modeling (https://proceedings.neurips.cc/paper/2021/file/7f489f642a0ddb10272b5c31057f0663-Paper.pdf)
-
 ### Multi-Game Decision Transformers (https://arxiv.org/abs/2205.15241)
 - released models -> use this transformer?
+
+### Awesome Decision Transformer Collection (https://github.com/opendilab/awesome-decision-transformer)
+Papers:
+- LATTE: LAnguage Trajectory TransformEr
+- Q-learning Decision Transformer: Leveraging Dynamic Programming for Conditional Sequence Modelling in Offline RL
+- Multi-Game Decision Transformers
+- Deep Transformer Q-Networks for Partially Observable Reinforcement Learning
+- You Can't Count on Luck: Why Decision Transformers and RvS Fail in Stochastic Environments
+- Online Decision Transformer
+- 
+
+### Decision Transformer: Reinforcement Learning via Sequence Modeling (https://proceedings.neurips.cc/paper/2021/file/7f489f642a0ddb10272b5c31057f0663-Paper.pdf)
+
+### Offline Reinforcement Learning as One Big Sequence Modeling Problem
+
 
 
 
@@ -174,7 +175,6 @@ Pre-Trained Language Models for Interactive Decision-Making
 Online Decision Transformer
 Prompting Decision Transformer for Few-Shot Policy Generalization
 Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting
-
 
 
 ### Representation Matters: The Game of Chess Poses a Challenge to Vision Transformers (https://arxiv.org/pdf/2304.14918.pdf)
