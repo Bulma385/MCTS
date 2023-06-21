@@ -144,7 +144,7 @@ Papers:
 - Deep Transformer Q-Networks for Partially Observable Reinforcement Learning
 - You Can't Count on Luck: Why Decision Transformers and RvS Fail in Stochastic Environments
 - Online Decision Transformer
-- 
+- (CQL Conservative Q-Learning for Offline Reinforcement Learning)
 
 ### Decision Transformer: Reinforcement Learning via Sequence Modeling (https://proceedings.neurips.cc/paper/2021/file/7f489f642a0ddb10272b5c31057f0663-Paper.pdf)
 
