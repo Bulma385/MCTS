@@ -49,15 +49,6 @@ Problem::
 
 
 
-### On Transforming Reinforcement Learning with
-Transformers: The Development Trajectory (https://arxiv.org/pdf/2212.14164.pdf)
-
-### Decision Transformer: Reinforcement
-Learning via Sequence Modeling (https://proceedings.neurips.cc/paper/2021/file/7f489f642a0ddb10272b5c31057f0663-Paper.pdf)
-
-### Multi-Game Decision Transformers (https://arxiv.org/abs/2205.15241)
-- released models -> use this transformer?
-
 ### DeepStack
 
 
@@ -146,6 +137,21 @@ guessing the correct board
 3. expected value for each action given information state is weighted sum of prob and estimated payoff
 - information state abstraction 
 - node representation decrease - byte to bit uint? hash mapping structure?
+
+
+
+
+### On Transforming Reinforcement Learning with
+Transformers: The Development Trajectory (https://arxiv.org/pdf/2212.14164.pdf)
+
+### Decision Transformer: Reinforcement
+Learning via Sequence Modeling (https://proceedings.neurips.cc/paper/2021/file/7f489f642a0ddb10272b5c31057f0663-Paper.pdf)
+
+### Multi-Game Decision Transformers (https://arxiv.org/abs/2205.15241)
+- released models -> use this transformer?
+
+
+
 
 
 ### A Survey on Transformers in Reinforcement Learning (https://arxiv.org/pdf/2301.03044.pdf)
