@@ -163,18 +163,17 @@ Challenges:
 Offline RL::
 - static offline dataset (e.g. replay buffer), "constrain the learned policy close to the data distribution, to avoid out-of-distribution actions"
 - popular trend RL via SL (RvS) [Emmons et al., 2021],
-
 Goal Conditioned RL::
 - Goal-Conditioned Reinforcement Learning: Problems and Solutions (https://arxiv.org/pdf/2201.08299.pdf)
-
 Model-based RL:: (learn model interesting)
 - Mastering atari, go, chess and shogi by planning with a learned model
 - generate imaginary trajectories: Dream to control: Learning behaviors by latent imagination
-(stehen geblieben 2.2 Tranformers!!!!!!!)
-
-
-
-
+Divided into a) World model learning; b) sequential decision making; c) 
+Papers:
+Pre-Trained Language Models for Interactive Decision-Making
+Online Decision Transformer
+Prompting Decision Transformer for Few-Shot Policy Generalization
+Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting
 
 
 
