@@ -129,6 +129,7 @@ guessing the correct board
 
 
 
+### STABILIZING TRANSFORMERS FOR REINFORCEMENT LEARNING
 
 ### On Transforming Reinforcement Learning with
 Transformers: The Development Trajectory (https://arxiv.org/pdf/2212.14164.pdf)
@@ -145,9 +146,18 @@ Papers:
 - You Can't Count on Luck: Why Decision Transformers and RvS Fail in Stochastic Environments
 - Online Decision Transformer
 - (CQL Conservative Q-Learning for Offline Reinforcement Learning)
-
+- (upside down RL ?)
+- (Generalized Decision Transformer for
+Offline Hindsight Information Matching. )
 
 ### Offline Reinforcement Learning as One Big Sequence Modeling Problem
+
+### You Can't Count on Luck: Why Decision Transformers and RvS Fail in Stochastic Environments
+- DT falsely assume in stoch environments that actions that end up in achieving a particular goal are optimal for achieving that goal
+- learn environment-storasticity-independent representations and achives stronger alignment between target return and actual expected return
+- interested in statistics that are independent to uncontrollable radnomness
+- 
+
 
 ### Decision Transformer: Reinforcement Learning via Sequence Modeling (https://proceedings.neurips.cc/paper/2021/file/7f489f642a0ddb10272b5c31057f0663-Paper.pdf)
 - autoregressive modelling
@@ -163,12 +173,14 @@ Papers:
 - additionallz embedding for each time step (note 3 tokens, i.e. reward, state, action have same pos emb)
 - ? prediction head corresponding to input st trained to predict at (with cross-entropy loss or MSE if cont.) and losses for each time step are averaged
 - init generation: set enviroment starting state and set e.g. max return; after each action decrement return to go
-- 
+- robust for delayed rewards
+- sequence modelling possible even without access to the reward function
 
 questions: 
 - we return-to-go modefizieren? 0 abziehen? oder im neuen state schatzen?
 - sometimes assumes access to expert training data
-- 
+
+ SM may be interesting!
 
 
 ### A Survey on Transformers in Reinforcement Learning (https://arxiv.org/pdf/2301.03044.pdf)
