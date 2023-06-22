@@ -126,7 +126,9 @@ guessing the correct board
 3. expected value for each action given information state is weighted sum of prob and estimated payoff
 - information state abstraction 
 - node representation decrease - byte to bit uint? hash mapping structure?
-
+4. Supplementary Material
+- the value of a node is the sum over all terminal states of the probability of reaching that terminal node from the original one times the terminal reward
+- value of an action given an info set is the sum over all nodes in that info set of opponent prob to reach node times value of h* a (next node) normalized by sum over opponent probs over nodes
 
 
 
