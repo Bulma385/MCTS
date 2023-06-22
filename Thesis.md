@@ -146,13 +146,29 @@ Papers:
 - Online Decision Transformer
 - (CQL Conservative Q-Learning for Offline Reinforcement Learning)
 
-### Decision Transformer: Reinforcement Learning via Sequence Modeling (https://proceedings.neurips.cc/paper/2021/file/7f489f642a0ddb10272b5c31057f0663-Paper.pdf)
 
 ### Offline Reinforcement Learning as One Big Sequence Modeling Problem
 
+### Decision Transformer: Reinforcement Learning via Sequence Modeling (https://proceedings.neurips.cc/paper/2021/file/7f489f642a0ddb10272b5c31057f0663-Paper.pdf)
+- autoregressive modelling
+- causal masking ?
+- can utitlize language and vision tranformers
+- no need for specializd RL frameworks
+- work effectively with sparse and distracting rewards
+- offline RL: only access to limited trainingdata
+- GPT arch., attention calc with only j in 1 to i (only consider previous elements)
+- return to go = sum of future rewards
+- for each modality learn linear embedding that projects into embedding dim followed bz normalization (Ba et al. Layer normalization)
+- (for visual input -> conv layers)
+- additionallz embedding for each time step (note 3 tokens, i.e. reward, state, action have same pos emb)
+- ? prediction head corresponding to input st trained to predict at (with cross-entropy loss or MSE if cont.) and losses for each time step are averaged
+- init generation: set enviroment starting state and set e.g. max return; after each action decrement return to go
+- 
 
-
-
+questions: 
+- we return-to-go modefizieren? 0 abziehen? oder im neuen state schatzen?
+- sometimes assumes access to expert training data
+- 
 
 
 ### A Survey on Transformers in Reinforcement Learning (https://arxiv.org/pdf/2301.03044.pdf)
