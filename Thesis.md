@@ -153,10 +153,19 @@ Offline Hindsight Information Matching. )
 ### Offline Reinforcement Learning as One Big Sequence Modeling Problem
 
 ### You Can't Count on Luck: Why Decision Transformers and RvS Fail in Stochastic Environments
+- code: https://sites.google.com/view/esper-paper
 - DT falsely assume in stoch environments that actions that end up in achieving a particular goal are optimal for achieving that goal
+- bad performance independent of amout of data
 - learn environment-storasticity-independent representations and achives stronger alignment between target return and actual expected return
 - interested in statistics that are independent to uncontrollable radnomness
-- 
+ESPER:
+- train neural net to learn stoch ind statistics in 3 phases
+1. discrete representation cluster by auto-encoder with adversarial loss??
+2. learn to predict average trajectory return
+3. RvS agent conditioned on state and avg return
+- DT arch. A.5.1
+- Problems:
+1. in environments where adecently-strong dynamics model cannot be learned, the adversarial clustering in ESPER may fail
 
 
 ### Decision Transformer: Reinforcement Learning via Sequence Modeling (https://proceedings.neurips.cc/paper/2021/file/7f489f642a0ddb10272b5c31057f0663-Paper.pdf)
