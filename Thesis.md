@@ -155,6 +155,10 @@ Offline Hindsight Information Matching. )
 
 ### Offline Reinforcement Learning as One Big Sequence Modeling Problem
 
+
+### Deep Transformer Q-Networks for Partially Observable Reinforcement Learning
+- 
+
 ### You Can't Count on Luck: Why Decision Transformers and RvS Fail in Stochastic Environments
 - code: https://sites.google.com/view/esper-paper
 - DT falsely assume in stoch environments that actions that end up in achieving a particular goal are optimal for achieving that goal
