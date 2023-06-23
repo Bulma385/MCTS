@@ -43,6 +43,9 @@ Dritte Idee:
 Vierte Idee:
 - aus representationen + opponent policy head opponent reaktions samplen
 
+Idee:
+sequence o0,s0,a0,o1,s1,a1,... with masked sk when normal playing
+
 Problem::
 - damit der search tree wächst muss geclustert werden weil gesamplete start werte zu viele 1k * 1k * (50 über 3 = 20k) = 20 milliarden
 - das problem hat man nicht bei schach etc weil gleicher start punkt und optimale trajektorien verlaufen ähnlich
