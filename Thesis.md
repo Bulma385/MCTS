@@ -167,7 +167,7 @@ Offline Hindsight Information Matching. )
 - ! 5.3 options for combine and layer norm + A comparison of different transformer backbones, such as Big Bird (Zaheer et al., 2020), sparse transformers (Child et al., 2019), or the TransformerXL would be interesting future study
 - double DQN ((Van Hasselt et al., 2016)) strategy
 - similarity scores of positional encodings -> indicate usefullness
-
+- github
 
 
 ### You Can't Count on Luck: Why Decision Transformers and RvS Fail in Stochastic Environments
