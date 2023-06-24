@@ -1,5 +1,7 @@
 ### Thesis::
 
+https://pytorch.org/tutorials/beginner/transformer_tutorial.html
+
 Introduction:
 - MCTS guarenteed to conv to Nash Eq for 2p0s perf info games
 - determinization techniques have problems and do not converge, e.g. strategy fusion (old sources Finding optimal strategies for imperfect information games + . Understanding the Success of Perfect Information Monte Carlo Sampling in Game Tree Search)
@@ -157,7 +159,16 @@ Offline Hindsight Information Matching. )
 
 
 ### Deep Transformer Q-Networks for Partially Observable Reinforcement Learning
-- 
+- transformer decoder architecture; learned positional encodings; learned obs emb
+- input: previous k observations projected linearly into model dim; output: Q values for every step (use all Q values for training!!! (like in (Al-Rfou et al., 2019) in NLP), only last for inference)
+- NLP pos enc (Wang & Chen, 2020) https://arxiv.org/abs/2010.04903
+- 4.2 Transformer decoder structur:  GPT architecture (Radford et al., 2018),  masked multi-headed self-attention and a position-wise feedforward network, combine layers
+- ? Note that the for loop depicted in Algorithm 1 can be done in one forward pass of the network because of the causally-masked self-attention mechanism.
+- ! 5.3 options for combine and layer norm + A comparison of different transformer backbones, such as Big Bird (Zaheer et al., 2020), sparse transformers (Child et al., 2019), or the TransformerXL would be interesting future study
+- double DQN ((Van Hasselt et al., 2016)) strategy
+- similarity scores of positional encodings -> indicate usefullness
+
+
 
 ### You Can't Count on Luck: Why Decision Transformers and RvS Fail in Stochastic Environments
 - code: https://sites.google.com/view/esper-paper
