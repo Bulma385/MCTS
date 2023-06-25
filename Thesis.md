@@ -165,7 +165,8 @@ Offline Hindsight Information Matching. )
 
 ### Offline Reinforcement Learning as One Big Sequence Modeling Problem
 - discretization uniform or quantile (comparison 4.2)
-- 
+- beam search
+- rest same as DT
 
 ### Deep Transformer Q-Networks for Partially Observable Reinforcement Learning
 - transformer decoder architecture; learned positional encodings; learned obs emb
