@@ -2,6 +2,14 @@
 
 https://pytorch.org/tutorials/beginner/transformer_tutorial.html
 
+minGPT https://github.com/karpathy/minGPT
+
+Pre-Trained Language Models for Interactive Decision Making https://arxiv.org/pdf/2202.01771.pdf
+
+A Survey on Offline Reinforcement Learning: Taxonomy, Review, and Open Problems
+
+Long Range Arena: A Benchmark for Efficient Transformers
+
 Introduction:
 - MCTS guarenteed to conv to Nash Eq for 2p0s perf info games
 - determinization techniques have problems and do not converge, e.g. strategy fusion (old sources Finding optimal strategies for imperfect information games + . Understanding the Success of Perfect Information Monte Carlo Sampling in Game Tree Search)
@@ -156,7 +164,8 @@ Papers:
 Offline Hindsight Information Matching. )
 
 ### Offline Reinforcement Learning as One Big Sequence Modeling Problem
-
+- discretization uniform or quantile (comparison 4.2)
+- 
 
 ### Deep Transformer Q-Networks for Partially Observable Reinforcement Learning
 - transformer decoder architecture; learned positional encodings; learned obs emb
