@@ -182,8 +182,11 @@ Offline Hindsight Information Matching. )
 
 ### You Can't Count on Luck: Why Decision Transformers and RvS Fail in Stochastic Environments
 - code: https://sites.google.com/view/esper-paper
+- In environments where a decently-strong dynamics model cannot be learned, the adversarial clustering in ESPER may fail
 - DT falsely assume in stoch environments that actions that end up in achieving a particular goal are optimal for achieving that goal
+- if conditioned on positive reward, the model doesnt get to see traj with negative reward that result from the same actions
 - bad performance independent of amout of data
+- condition on outcome that is fully determinized by actions
 - learn environment-storasticity-independent representations and achives stronger alignment between target return and actual expected return
 - interested in statistics that are independent to uncontrollable radnomness
 ESPER:
