@@ -1,5 +1,7 @@
 ### Thesis::
 
+general RL problems: bootstrapping, deadlz triad
+
 https://pytorch.org/tutorials/beginner/transformer_tutorial.html
 
 minGPT https://github.com/karpathy/minGPT
@@ -144,8 +146,7 @@ guessing the correct board
 
 ### STABILIZING TRANSFORMERS FOR REINFORCEMENT LEARNING
 
-### On Transforming Reinforcement Learning with
-Transformers: The Development Trajectory (https://arxiv.org/pdf/2212.14164.pdf)
+
 
 ### Multi-Game Decision Transformers (https://arxiv.org/abs/2205.15241)
 - released models -> use this transformer?
@@ -163,10 +164,22 @@ Papers:
 - (Generalized Decision Transformer for
 Offline Hindsight Information Matching. )
 
-### Offline Reinforcement Learning as One Big Sequence Modeling Problem
-- discretization uniform or quantile (comparison 4.2)
-- beam search
-- rest same as DT
+### When does return-conditioned supervised learning work for offline reinforcement learning?
+
+### Vector Quantized Models for Planning
+- mcts 
+
+### On Transforming Reinforcement Learning with Transformers: The Development Trajectory (https://arxiv.org/pdf/2212.14164.pdf)
+- feature representations or environmental representations
+- advantage function = difference between action value and state value
+- dynamic programming, model-free, and model based method
+- Dynamic programming is used to compute the optimal policy given a known MDP. In modelfree methods, since we do not know the MDP, we use
+the sampling method instead. We can directly optimize thepolicy through a policy gradient method (e.g., REINFORCE[71], PG [72], or NPG [73]), use a value iteration methodto determine the policy from the value function (e.g., the
+deep Q-network (DQN) [74], Double DQN [75], or DuelingDQN [70]), or use an actor-critic method that adopts thecritic’s value to improve the actor’s policy (e.g., DDPG[76], PPO [77], or SAC [78]). In model-based methods (e.g.,MOReL [79], MOPO [80], and COMBO [81]),
+- positional encodings
+- residual connections
+- actor learner destillation “Impala: Scalable distributed deep-rl with importance weighted actor-learner architectures
+
 
 ### Deep Transformer Q-Networks for Partially Observable Reinforcement Learning
 - transformer decoder architecture; learned positional encodings; learned obs emb
@@ -222,6 +235,11 @@ questions:
 
  SM may be interesting!
 
+
+### Offline Reinforcement Learning as One Big Sequence Modeling Problem
+- discretization uniform or quantile (comparison 4.2)
+- beam search
+- rest same as DT
 
 ### A Survey on Transformers in Reinforcement Learning (https://arxiv.org/pdf/2301.03044.pdf)
 Challenges:
