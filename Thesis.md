@@ -169,6 +169,9 @@ Offline Hindsight Information Matching. )
 ### Vector Quantized Models for Planning
 - mcts 
 
+ Zheng
+et al. [36] introduced the online DT (ODT), a learning framework for RL that incorporates online fine-tuning intothe DT pretraining algorithm. To balance the explorationexploitation tradeoff
+
 ### On Transforming Reinforcement Learning with Transformers: The Development Trajectory (https://arxiv.org/pdf/2212.14164.pdf)
 - feature representations or environmental representations
 - advantage function = difference between action value and state value
@@ -179,6 +182,7 @@ deep Q-network (DQN) [74], Double DQN [75], or DuelingDQN [70]), or use an actor
 - positional encodings
 - residual connections
 - actor learner destillation “Impala: Scalable distributed deep-rl with importance weighted actor-learner architectures
+- stehen geblieben canonical RL
 
 
 ### Deep Transformer Q-Networks for Partially Observable Reinforcement Learning
