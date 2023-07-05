@@ -184,7 +184,28 @@ deep Q-network (DQN) [74], Double DQN [75], or DuelingDQN [70]), or use an actor
 - actor learner destillation “Impala: Scalable distributed deep-rl with importance weighted actor-learner architectures
 - stehen geblieben canonical RL
 
+
+
 ### A Transformer-based Framework for Multivariate Time Series Representation Learning
+- "In particular, each training sample.."
+- normalize features for each dimension
+- then lin proj into model dim (emb)
+- then add pos encodings
+- An important consideration regarding time series data is that
+individual samples may display considerable variation in length.
+This issue is effectively dealt with in our framework: after setting a
+maximum sequence length𝑤 for the entire dataset, shorter samples
+are padded with arbitrary values, and we generate a padding mask
+which adds a large negative value to the attention scores for the
+padded positions, before computing the self-attention distribution
+with the softmax function. This forces the model to completely
+ignore padded positions, while allowing the parallel processing of
+samples in large minibatches.
+- here batch normalization, originally´layer norm
+- final representations are mapped into desired regression/classification output by 1 fc layer
+- mse or cross entropy loss
+- skipped pretraining experiments, adding samples
+
 
 ### Deep Transformer Q-Networks for Partially Observable Reinforcement Learning
 - transformer decoder architecture; learned positional encodings; learned obs emb
