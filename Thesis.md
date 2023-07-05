@@ -184,6 +184,7 @@ deep Q-network (DQN) [74], Double DQN [75], or DuelingDQN [70]), or use an actor
 - actor learner destillation “Impala: Scalable distributed deep-rl with importance weighted actor-learner architectures
 - stehen geblieben canonical RL
 
+### A Transformer-based Framework for Multivariate Time Series Representation Learning
 
 ### Deep Transformer Q-Networks for Partially Observable Reinforcement Learning
 - transformer decoder architecture; learned positional encodings; learned obs emb
