@@ -1,4 +1,9 @@
 ### Thesis::
+Regression best practice
+https://visualstudiomagazine.com/articles/2022/11/14/pytorch-regression-2.aspx
+
+transformer with code
+https://towardsdatascience.com/how-to-code-the-transformer-in-pytorch-24db27c8f9ec
 
 general RL problems: bootstrapping, deadlz triad
 
