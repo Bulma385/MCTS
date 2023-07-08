@@ -1,4 +1,9 @@
 ### Thesis::
+papers interesting
+https://arxiv.org/abs/2203.07413
+https://arxiv.org/abs/2005.14165
+https://arxiv.org/abs/2303.03382
+
 Regression best practice
 https://visualstudiomagazine.com/articles/2022/11/14/pytorch-regression-2.aspx
 
